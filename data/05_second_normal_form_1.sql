@@ -36,3 +36,24 @@ VALUES
 SELECT * FROM nc_classroom_1NF;
 
 -- CREATE NEW TABLES HERE:
+
+CREATE TABLE student_nos_subjects AS
+SELECT student_no, subject
+FROM nc_classroom_1NF;
+
+ALTER TABLE student_nos_subjects
+ADD PRIMARY KEY (student_no, subject);
+
+SELECT * FROM student_nos_subjects;
+
+CREATE TABLE nc_classroom_2nf AS
+SELECT DISTINCT student_no, mentor, classroom
+FROM nc_classroom_1NF;
+
+ALTER TABLE nc_classroom_2nf
+ADD PRIMARY KEY (student_no);
+
+SELECT * FROM nc_classroom_2nf;
+
+ALTER TABLE student_nos_subjects
+ADD FOREIGN KEY (student_no) REFERENCES nc_classroom_2nf(student_no);

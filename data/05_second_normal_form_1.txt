@@ -21,3 +21,35 @@ INSERT 0 14
       12633 | Haz    | Zoom_08   | I.T.
 (14 rows)
 
+SELECT 14
+ALTER TABLE
+ student_no | subject  
+------------+----------
+      10456 | Maths
+      10456 | Science
+      10456 | English
+      10839 | English
+      10839 | Art
+      10839 | P.E.
+      10931 | Music
+      10931 | French
+      10931 | Business
+      11525 | I.T.
+      11525 | Art
+      12633 | Science
+      12633 | P.E.
+      12633 | I.T.
+(14 rows)
+
+SELECT 5
+ALTER TABLE
+ student_no | mentor | classroom 
+------------+--------+-----------
+      10456 | Rose   | Zoom_12
+      10839 | Haz    | Zoom_08
+      11525 | Liam   | Zoom_15
+      12633 | Haz    | Zoom_08
+      10931 | Rose   | Zoom_12
+(5 rows)
+
+ALTER TABLE
