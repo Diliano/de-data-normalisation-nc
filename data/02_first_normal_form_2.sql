@@ -26,3 +26,9 @@ VALUES
 SELECT * FROM nc_mentors;
 
 -- CREATE NEW TABLES HERE:
+
+CREATE TABLE nc_mentors_1nf AS
+SELECT employee_id, mentor_name, UNNEST(STRING_TO_ARRAY(department, ', ')) AS department, location
+FROM nc_mentors;
+
+SELECT * FROM nc_mentors_1nf;
