@@ -38,3 +38,24 @@ VALUES
 SELECT * FROM nc_restaurant_staff_1NF;
 
 -- CREATE NEW TABLES HERE:
+
+CREATE TABLE employee_nos_job_titles AS
+SELECT employee_no, job_title
+FROM nc_restaurant_staff_1NF;
+
+ALTER TABLE employee_nos_job_titles
+ADD PRIMARY KEY (employee_no, job_title);
+
+SELECT * FROM employee_nos_job_titles;
+
+CREATE TABLE nc_restaurant_staff_2nf AS
+SELECT DISTINCT employee_no, full_name, employment, shift
+FROM nc_restaurant_staff_1nf;
+
+ALTER TABLE nc_restaurant_staff_2nf
+ADD PRIMARY KEY (employee_no);
+
+SELECT * FROM nc_restaurant_staff_2nf;
+
+ALTER TABLE employee_nos_job_titles
+ADD FOREIGN KEY (employee_no) REFERENCES nc_restaurant_staff_2nf(employee_no);
