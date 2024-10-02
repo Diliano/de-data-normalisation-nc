@@ -35,3 +35,27 @@ INSERT 0 13
  NC0009      | Bartender
 (13 rows)
 
+SELECT 2
+ALTER TABLE
+ employment |  shift  
+------------+---------
+ Full-time  | All Day
+ Part-time  | Evening
+(2 rows)
+
+SELECT 9
+ALTER TABLE
+ employee_no |      full_name      | employment 
+-------------+---------------------+------------
+ NC0001      | Gordon Ramsay       | Full-time
+ NC0002      | Jamie Oliver        | Part-time
+ NC0003      | Rachael Ray         | Full-time
+ NC0004      | Wolfgang Puck       | Full-time
+ NC0005      | Giada De Laurentiis | Full-time
+ NC0006      | Alan Ducasse        | Part-time
+ NC0007      | Anne Burrell        | Full-time
+ NC0008      | David Chang         | Part-time
+ NC0009      | Guy Fieri           | Part-time
+(9 rows)
+
+ALTER TABLE

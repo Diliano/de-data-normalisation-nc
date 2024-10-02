@@ -56,3 +56,25 @@ SELECT * FROM nc_restaurant_employees_2NF;
 SELECT * FROM employee_jobs_2NF;
 
 -- CREATE NEW TABLES HERE:
+
+CREATE TABLE employment_shifts AS
+SELECT DISTINCT employment, shift
+FROM nc_restaurant_employees_2NF;
+
+ALTER TABLE employment_shifts
+ADD PRIMARY KEY (employment);
+
+SELECT * FROM employment_shifts;
+
+CREATE TABLE nc_restaurant_employees_3nf AS
+SELECT employee_no, full_name, employment
+FROM nc_restaurant_employees_2NF;
+
+ALTER TABLE nc_restaurant_employees_3nf
+ADD PRIMARY KEY (employee_no);
+
+SELECT * FROM nc_restaurant_employees_3nf;
+
+ALTER TABLE nc_restaurant_employees_3nf
+ADD FOREIGN KEY (employment) REFERENCES employment_shifts(employment);
+
