@@ -30,7 +30,7 @@ SELECT * FROM students;
 -- CREATE NEW TABLES HERE:
 
 CREATE TABLE students_1nf AS
-SELECT student_id, student_name, UNNEST(STRING_TO_ARRAY(courses, ', ')), age
+SELECT student_id, student_name, UNNEST(STRING_TO_ARRAY(courses, ', ')) AS course, age
 FROM students;
 
 SELECT * FROM students_1nf;
