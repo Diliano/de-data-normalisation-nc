@@ -32,3 +32,24 @@ INSERT 0 14
       12633 | I.T.
 (14 rows)
 
+SELECT 3
+ALTER TABLE
+ mentor | classroom 
+--------+-----------
+ Rose   | Zoom_12
+ Liam   | Zoom_15
+ Haz    | Zoom_08
+(3 rows)
+
+SELECT 5
+ALTER TABLE
+ student_id | mentor 
+------------+--------
+      10456 | Rose
+      10839 | Haz
+      10931 | Rose
+      11525 | Liam
+      12633 | Haz
+(5 rows)
+
+ALTER TABLE
