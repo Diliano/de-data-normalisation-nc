@@ -29,3 +29,9 @@ VALUES
 SELECT * FROM food_orders;
 
 -- CREATE NEW TABLES HERE:
+
+CREATE TABLE food_orders_1nf AS
+SELECT customer_name, UNNEST(STRING_TO_ARRAY(food_order, ', ')) AS food_order, restaurant, preference
+FROM food_orders;
+
+SELECT * FROM food_orders_1nf;
