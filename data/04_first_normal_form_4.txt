@@ -13,3 +13,21 @@ INSERT 0 6
  Bruce Banner     | Mr    | Hulk            | Champion's Quarters | Shutter Island, Begin Again, Dark Waters
 (6 rows)
 
+SELECT 13
+    full_name     | title | preferred_name  |       address       |    movie_rented    
+------------------+-------+-----------------+---------------------+--------------------
+ Natasha Romanoff | Ms    | Black Widow     | Soul Stone          | Her
+ Natasha Romanoff | Ms    | Black Widow     | Soul Stone          | Lucy
+ Natasha Romanoff | Ms    | Black Widow     | Soul Stone          | Ghost in the Shell
+ Tony Stark       | Mr    | Ironman         | Stark Tower         | Sherlock Holmes
+ Steve Rogers     | Mr    | Captain America | Iceburg             | The Gray Man
+ Steve Rogers     | Mr    | Captain America | Iceburg             | Knives Out
+ Wanda Maximoff   | Ms    | Scarlet Witch   | Asylum              | Wind River
+ Wanda Maximoff   | Ms    | Scarlet Witch   | Asylum              | Wandavision
+ Thor Odinson     | Mr    | Thor            | New Asgard          | Men In Black
+ Thor Odinson     | Mr    | Thor            | New Asgard          | Extraction
+ Bruce Banner     | Mr    | Hulk            | Champion's Quarters | Shutter Island
+ Bruce Banner     | Mr    | Hulk            | Champion's Quarters | Begin Again
+ Bruce Banner     | Mr    | Hulk            | Champion's Quarters | Dark Waters
+(13 rows)
+
