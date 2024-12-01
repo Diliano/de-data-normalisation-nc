@@ -1,3 +1,5 @@
-# Top Model
+# Data Engineering Bootcamp - Data Normalisation
 
-Instructions for today's sprint can be found at: https://l2c.northcoders.com/courses/de2-data/data-normalisation
+## Overview
+
+This repository contains work completed as part of the Data Normalisation Sprint during my Data Engineering Bootcamp. 
